@@ -7,7 +7,7 @@ import torch
 import torch.nn.functional as F
 
 from config import get_config
-from models import SNGNN, SNGNN_Plus, \
+from models import SNGNN, SNGNN_Plus, SNGNN_Plus_Plus, \
     MLP, LINK, GAT, MixHop, GCNJK, GCNII, GPRGNN, \
     LINKX, H2GCN, APPNP_Net, LINK_Concat, MLPNORM,\
     GGCN, ACMGCN, WRGAT, AGNN

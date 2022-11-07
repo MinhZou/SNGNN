@@ -1,0 +1,9 @@
+# configure feature path
+work_dir: ./work_dir
+
+#Train
+seed: 1234
+#max_epoch: 600
+epochs: 200
+optimizer:
+  lr: 0.01

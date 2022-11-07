@@ -1,5 +1,5 @@
-from .datasets import SGGNNPlanetoid, SGGNNWebKB, SGGNNWikipediaNetwork, \
-    SGGNNActor
+from .datasets import SNGNNPlanetoid, SNGNNWebKB, SNGNNWikipediaNetwork, \
+    SNGNNActor
 
-__all__ = ['SGGNNPlanetoid', 'SGGNNWebKB',
-           'SGGNNWikipediaNetwork', 'SGGNNActor']
+__all__ = ['SNGNNPlanetoid', 'SNGNNWebKB',
+           'SNGNNWikipediaNetwork', 'SNGNNActor']

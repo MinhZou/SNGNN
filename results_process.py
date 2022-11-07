@@ -4,7 +4,7 @@ from prettytable import PrettyTable
 import numpy as np
 
 
-file_dir = './work_dir-PubMed-SGGNN' # CiteSeer Chameleon Texas Cora Wisconsin Cornell PubMed Squirrel Actor
+file_dir = './work_dir-PubMed-SNGNN' # CiteSeer Chameleon Texas Cora Wisconsin Cornell PubMed Squirrel Actor
 results = {}
 processed_results = {}
 best_results = {}

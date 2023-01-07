@@ -4,7 +4,7 @@
 
 This repository contains a pytorch implementation of **Similarity-Navigated Graph Neural Networks for Node Classification**
 
-Graph Neural Networks are effective in learning representations of graph-structured data. Some recent works are devoted to addressing heterophily, which exists ubiquitously in real-world networks, breaking the homophily assumption that nodes belonging to the same class are more likely to be connected and restricting the generalization of traditional methods in tasks such as node classification. However, these heterophily-oriented methods still lose efficacy in some typical heterophilic datasets. In this work, we first provide insights based on similarity metrics to interpret the long-existing confusion that simple models sometimes perform better than models dedicated to heterophilic networks. Then, sticking to these insights and the classification principle of narrowing the intra-class distance and enlarging the inter-class distance of the sample's embeddings, we propose a Similarity-Navigated Graph Neural Network (SNGNN) which uses **Node Similarity** matrix coupled with $\texttt{mean}$ aggregation operation instead of the normalized adjacency matrix in the neighborhood aggregation process. Moreover, based on SNGNN, a novel explicitly aggregating mechanism for selecting similar neighbors, named by SNGNN+, is devised to preserve distinguishable features and handle the heterophilic problem. Additionally, a variant, SNGNN++, is further designed to adaptively integrate the knowledge from both node features and graph structure for improvement. Extensive experiments are performed and demonstrate that our proposed framework outperforms the state-of-the-art methods for both homophilic and heterophilic benchmark graphs. Our implementation is available online.
+Graph Neural Networks are effective in learning representations of graph-structured data. Some recent works are devoted to addressing heterophily, which exists ubiquitously in real-world networks, breaking the homophily assumption that nodes belonging to the same class are more likely to be connected and restricting the generalization of traditional methods in tasks such as node classification. However, these heterophily-oriented methods still lose efficacy in some typical heterophilic datasets. Moreover, issues on leveraging the knowledge from both node features and graph structure and investigating inherent properties of the datasets still need further consideration. In this work, we first provide insights based on similarity metrics to interpret the long-existing confusion that simple models sometimes perform better than models dedicated to heterophilic networks. Then, sticking to these insights and the classification principle of narrowing the intra-class distance and enlarging the inter-class distance of the sample's embeddings, we propose a Similarity-Navigated Graph Neural Network (SNGNN) which uses *Node Similarity* matrix coupled with $\texttt{mean}$ aggregation operation instead of the normalized adjacency matrix in the neighborhood aggregation process. Moreover, based on SNGNN, a novel explicitly aggregating mechanism for selecting similar neighbors, named SNGNN+, is devised to preserve distinguishable features and handle the heterophilic problem. Additionally, a variant, SNGNN++, is further designed to adaptively integrate the knowledge from both node features and graph structure for improvement. Extensive experiments are conducted and demonstrate that our proposed framework outperforms the state-of-the-art methods for both small-scale and large-scale graphs regardless of their heterophilic extent. Our implementation is available online.
 
 ### Installation
 
@@ -64,4 +64,12 @@ Using the shell script to train with all settings:
 ```
 sh train_script_SNGNN_Plus_Plus.sh
 ```
+
+
+
+### Similarity-Navigated Graph Feature Analysis Toolbox (Sim-GFA Toolbox)
+
+![Sim-GFA Toolbox](pic/Sim-GFA Toolbox.png)
+
+<center> Figure 7: A framework illustration of Sim-GFA Toolbox. </center>
 

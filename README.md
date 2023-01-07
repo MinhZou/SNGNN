@@ -69,7 +69,7 @@ sh train_script_SNGNN_Plus_Plus.sh
 
 ### Similarity-Navigated Graph Feature Analysis Toolbox (Sim-GFA Toolbox)
 
-![Sim-GFA Toolbox](pic/Sim-GFA Toolbox.png)
+![Sim-GFA Toolbox](https://raw.githubusercontent.com/MinhZou/SNGNN/main/pic/Sim-GFA%20Toolbox.png)
 
 <center> Figure 7: A framework illustration of Sim-GFA Toolbox. </center>
 

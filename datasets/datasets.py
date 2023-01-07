@@ -2,12 +2,9 @@ import warnings
 import sys
 
 from torch_geometric.data.dataset import to_list, files_exist, makedirs,_repr
-import torch_geometric.transforms as T
 from torch_geometric.datasets import Planetoid, WebKB, WikipediaNetwork, Actor
 import torch
-import os
 import os.path as osp
-import shutil
 import numpy as np
 from torch_sparse import SparseTensor, coalesce
 from typing import Callable, List, Optional

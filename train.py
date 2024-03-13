@@ -7,7 +7,7 @@ import torch
 import torch.nn.functional as F
 
 from config import get_config
-from models import SNGNN, SNGNN_Plus, SNGNN_Plus_Plus, \
+from models import SNGNN, SNGNN_Plus, SNGNN_Plus_Plus, GCN, \
     MLP, LINK, GAT, MixHop, GCNJK, GCNII, GPRGNN, \
     LINKX, H2GCN, APPNP_Net, LINK_Concat, MLPNORM,\
     GGCN, ACMGCN, WRGAT, AGNN
@@ -22,11 +22,11 @@ from utils.data_transform import dense_to_sparse_coo_tensor, edge_index_to_adj_m
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a graph neural network')
-    parser.add_argument('--config', type=str, default='./config/config.yaml',
+    parser.add_argument('--config', type=str, default='./config/config-test.yaml',
                         help='config file path')
     parser.add_argument('--dataset', type=str, default='Cora',
                         help='dataset to use')
-    parser.add_argument('--model', type=str, default='GCN',
+    parser.add_argument('--model', type=str, default='SNGNN',
                         help='model to choose, for expammle: GCN, SpGAT, GAT')
     parser.add_argument('--work-dir', type=str, default='./work_dir',
                         help='the dir to save logs and models')
@@ -50,7 +50,7 @@ def parse_args():
                         help='Disables CUDA training.')
     parser.add_argument('--data-sorting', action='store_true', default=False,
                         help='whether not to sort the data before training')
-    parser.add_argument('--data_splits', action='store_true', default=False,
+    parser.add_argument('--data_splits', action='store_true', default=True,
                         help='whether to use the data split in reported paper in Planetoid')
     parser.add_argument('--part_id', type=int, default=0,
                         help='data split part')

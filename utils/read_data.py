@@ -17,7 +17,7 @@ except ImportError:
     import pickle
 
 
-def read_planetoid_data_SGGNN(folder, prefix):
+def read_planetoid_data_SNGNN(folder, prefix):
     names = ['x', 'tx', 'allx', 'y', 'ty', 'ally', 'graph', 'test.index']
     items = [read_file(folder, prefix, name) for name in names]
     x, tx, allx, y, ty, ally, graph, test_index = items

@@ -77,3 +77,15 @@ sh train_script_SNGNN_Plus_Plus.sh
 
 <center> Figure 7: A framework illustration of Sim-GFA Toolbox. </center>
 
+### Citation
+```
+@article{zou2023similarity,
+  title={Similarity-navigated graph neural networks for node classification},
+  author={Zou, Minhao and Gan, Zhongxue and Cao, Ruizhi and Guan, Chun and Leng, Siyang},
+  journal={Information Sciences},
+  volume={633},
+  pages={41--69},
+  year={2023},
+  publisher={Elsevier}
+}
+```
